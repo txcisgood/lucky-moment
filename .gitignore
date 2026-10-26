@@ -1,0 +1,39 @@
+node_modules/
+dist/
+dist-electron/
+release/
+test-results/
+playwright-report/
+.DS_Store
+*.log
+
+# Installers are published as GitHub Release assets.
+*.dmg
+*.exe
+*.zip
+*.blockmap
+outputs/
+screenshots/
+
+# Local credentials, activity files and design-tool sessions.
+.env
+.env.*
+!.env.example
+activity/
+activity*.json
+.impeccable/questions/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/live/
+.impeccable/build/
+.impeccable/config.local.json
+
+# Superseded visual explorations; keep the approved A reference and final screen.
+/方案A-立体姓名球.png
+/方案B-环形姓名圆盘.png
+/方案C-姓名墙与透镜.png
+/UI新方案B-回环.jpg
+/UI新方案C-聚焦.jpg
+/新版舞台预览.png
+/视觉方案提示词.txt
+/UI方案预览.html

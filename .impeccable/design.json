@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T16:35:49.947739+00:00",
+  "title": "Design System: 幸运时刻",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "动作红",
+        "canonical": "#d83243",
+        "tonalRamp": [
+          "oklch(15% 0.0703 21.10)",
+          "oklch(26% 0.1305 21.10)",
+          "oklch(38% 0.1707 21.10)",
+          "oklch(49% 0.2008 21.10)",
+          "oklch(61% 0.2008 21.10)",
+          "oklch(72% 0.1707 21.10)",
+          "oklch(84% 0.1104 21.10)",
+          "oklch(95% 0.0402 21.10)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "悬停动作红",
+        "canonical": "#e44757",
+        "tonalRamp": [
+          "oklch(15% 0.0674 19.11)",
+          "oklch(26% 0.1252 19.11)",
+          "oklch(38% 0.1637 19.11)",
+          "oklch(49% 0.1926 19.11)",
+          "oklch(61% 0.1926 19.11)",
+          "oklch(72% 0.1637 19.11)",
+          "oklch(84% 0.1059 19.11)",
+          "oklch(95% 0.0385 19.11)"
+        ]
+      },
+      "orbit-accent": {
+        "role": "primary",
+        "displayName": "轨道珊瑚红",
+        "canonical": "#f77582",
+        "tonalRamp": [
+          "oklch(15% 0.0558 15.80)",
+          "oklch(26% 0.1036 15.80)",
+          "oklch(38% 0.1355 15.80)",
+          "oklch(49% 0.1594 15.80)",
+          "oklch(61% 0.1594 15.80)",
+          "oklch(72% 0.1355 15.80)",
+          "oklch(84% 0.0877 15.80)",
+          "oklch(95% 0.0319 15.80)"
+        ]
+      },
+      "scene-ground": {
+        "role": "neutral",
+        "displayName": "舞台近黑",
+        "canonical": "#101013",
+        "tonalRamp": [
+          "oklch(15% 0.0022 285.74)",
+          "oklch(26% 0.0040 285.74)",
+          "oklch(38% 0.0052 285.74)",
+          "oklch(49% 0.0061 285.74)",
+          "oklch(61% 0.0061 285.74)",
+          "oklch(72% 0.0052 285.74)",
+          "oklch(84% 0.0034 285.74)",
+          "oklch(95% 0.0012 285.74)"
+        ]
+      },
+      "scene-ink": {
+        "role": "neutral",
+        "displayName": "姓名柔白",
+        "canonical": "#f6f5f7",
+        "tonalRamp": [
+          "oklch(15% 0.0010 308.43)",
+          "oklch(26% 0.0018 308.43)",
+          "oklch(38% 0.0024 308.43)",
+          "oklch(49% 0.0028 308.43)",
+          "oklch(61% 0.0028 308.43)",
+          "oklch(72% 0.0024 308.43)",
+          "oklch(84% 0.0016 308.43)",
+          "oklch(95% 0.0006 308.43)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "静谧灰",
+        "canonical": "#aaa9b3",
+        "tonalRamp": [
+          "oklch(15% 0.0050 290.65)",
+          "oklch(26% 0.0093 290.65)",
+          "oklch(38% 0.0121 290.65)",
+          "oklch(49% 0.0143 290.65)",
+          "oklch(61% 0.0143 290.65)",
+          "oklch(72% 0.0121 290.65)",
+          "oklch(84% 0.0078 290.65)",
+          "oklch(95% 0.0029 290.65)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "结果炭灰",
+        "canonical": "#242329",
+        "tonalRamp": [
+          "oklch(15% 0.0039 293.25)",
+          "oklch(26% 0.0073 293.25)",
+          "oklch(38% 0.0095 293.25)",
+          "oklch(49% 0.0112 293.25)",
+          "oklch(61% 0.0112 293.25)",
+          "oklch(72% 0.0095 293.25)",
+          "oklch(84% 0.0062 293.25)",
+          "oklch(95% 0.0022 293.25)"
+        ]
+      },
+      "scene-line": {
+        "role": "neutral",
+        "displayName": "细边界灰",
+        "canonical": "#45454d",
+        "tonalRamp": [
+          "oklch(15% 0.0047 285.77)",
+          "oklch(26% 0.0087 285.77)",
+          "oklch(38% 0.0114 285.77)",
+          "oklch(49% 0.0134 285.77)",
+          "oklch(61% 0.0134 285.77)",
+          "oklch(72% 0.0114 285.77)",
+          "oklch(84% 0.0074 285.77)",
+          "oklch(95% 0.0027 285.77)"
+        ]
+      },
+      "dock-glass": {
+        "role": "neutral",
+        "displayName": "烟灰操作玻璃",
+        "canonical": "#25252ddb",
+        "tonalRamp": [
+          "oklch(15% 0.0052 285.36)",
+          "oklch(26% 0.0096 285.36)",
+          "oklch(38% 0.0126 285.36)",
+          "oklch(49% 0.0148 285.36)",
+          "oklch(61% 0.0148 285.36)",
+          "oklch(72% 0.0126 285.36)",
+          "oklch(84% 0.0081 285.36)",
+          "oklch(95% 0.0030 285.36)"
+        ]
+      },
+      "settings-glass": {
+        "role": "neutral",
+        "displayName": "烟灰设置玻璃",
+        "canonical": "#202027f5",
+        "tonalRamp": [
+          "oklch(15% 0.0046 285.39)",
+          "oklch(26% 0.0086 285.39)",
+          "oklch(38% 0.0112 285.39)",
+          "oklch(49% 0.0132 285.39)",
+          "oklch(61% 0.0132 285.39)",
+          "oklch(72% 0.0112 285.39)",
+          "oklch(84% 0.0073 285.39)",
+          "oklch(95% 0.0026 285.39)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "表单灰",
+        "canonical": "#29262f",
+        "tonalRamp": [
+          "oklch(15% 0.0059 300.50)",
+          "oklch(26% 0.0110 300.50)",
+          "oklch(38% 0.0144 300.50)",
+          "oklch(49% 0.0169 300.50)",
+          "oklch(61% 0.0169 300.50)",
+          "oklch(72% 0.0144 300.50)",
+          "oklch(84% 0.0093 300.50)",
+          "oklch(95% 0.0034 300.50)"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "表单边界",
+        "canonical": "#46414d",
+        "tonalRamp": [
+          "oklch(15% 0.0074 304.29)",
+          "oklch(26% 0.0137 304.29)",
+          "oklch(38% 0.0179 304.29)",
+          "oklch(49% 0.0211 304.29)",
+          "oklch(61% 0.0211 304.29)",
+          "oklch(72% 0.0179 304.29)",
+          "oklch(84% 0.0116 304.29)",
+          "oklch(95% 0.0042 304.29)"
+        ]
+      },
+      "segment-ground": {
+        "role": "neutral",
+        "displayName": "分段底灰",
+        "canonical": "#15151b",
+        "tonalRamp": [
+          "oklch(15% 0.0042 285.26)",
+          "oklch(26% 0.0078 285.26)",
+          "oklch(38% 0.0102 285.26)",
+          "oklch(49% 0.0119 285.26)",
+          "oklch(61% 0.0119 285.26)",
+          "oklch(72% 0.0102 285.26)",
+          "oklch(84% 0.0066 285.26)",
+          "oklch(95% 0.0024 285.26)"
+        ]
+      },
+      "segment-selected": {
+        "role": "neutral",
+        "displayName": "选中灰",
+        "canonical": "#46404f",
+        "tonalRamp": [
+          "oklch(15% 0.0092 303.36)",
+          "oklch(26% 0.0171 303.36)",
+          "oklch(38% 0.0223 303.36)",
+          "oklch(49% 0.0263 303.36)",
+          "oklch(61% 0.0263 303.36)",
+          "oklch(72% 0.0223 303.36)",
+          "oklch(84% 0.0144 303.36)",
+          "oklch(95% 0.0053 303.36)"
+        ]
+      },
+      "next-surface": {
+        "role": "neutral",
+        "displayName": "下一轮柔白",
+        "canonical": "#f1eff4",
+        "tonalRamp": [
+          "oklch(15% 0.0024 304.24)",
+          "oklch(26% 0.0045 304.24)",
+          "oklch(38% 0.0059 304.24)",
+          "oklch(49% 0.0070 304.24)",
+          "oklch(61% 0.0070 304.24)",
+          "oklch(72% 0.0059 304.24)",
+          "oklch(84% 0.0038 304.24)",
+          "oklch(95% 0.0014 304.24)"
+        ]
+      },
+      "next-ink": {
+        "role": "neutral",
+        "displayName": "下一轮深墨",
+        "canonical": "#15151a",
+        "tonalRamp": [
+          "oklch(15% 0.0035 285.46)",
+          "oklch(26% 0.0065 285.46)",
+          "oklch(38% 0.0085 285.46)",
+          "oklch(49% 0.0100 285.46)",
+          "oklch(61% 0.0100 285.46)",
+          "oklch(72% 0.0085 285.46)",
+          "oklch(84% 0.0055 285.46)",
+          "oklch(95% 0.0020 285.46)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "焦点红",
+        "canonical": "#ff6c7e",
+        "tonalRamp": [
+          "oklch(15% 0.0627 15.39)",
+          "oklch(26% 0.1165 15.39)",
+          "oklch(38% 0.1523 15.39)",
+          "oklch(49% 0.1792 15.39)",
+          "oklch(61% 0.1792 15.39)",
+          "oklch(72% 0.1523 15.39)",
+          "oklch(84% 0.0986 15.39)",
+          "oklch(95% 0.0358 15.39)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "单人结果",
+        "purpose": "单一中奖者姓名。"
+      },
+      "headline": {
+        "displayName": "舞台标题",
+        "purpose": "轮次名称与结果轮次名称。"
+      },
+      "title": {
+        "displayName": "设置标题",
+        "purpose": "设置浮层标题。"
+      },
+      "body": {
+        "displayName": "名单正文",
+        "purpose": "粘贴名单等正文输入。"
+      },
+      "label": {
+        "displayName": "辅助标签",
+        "purpose": "字段、候选人数及说明。"
+      },
+      "action": {
+        "displayName": "舞台动作",
+        "purpose": "开始、停止与下一轮。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "dock",
+        "value": "0 14px 40px #0004",
+        "purpose": "浮动操作条。"
+      },
+      {
+        "name": "action",
+        "value": "0 4px 12px #0002",
+        "purpose": "舞台动作按钮。"
+      },
+      {
+        "name": "winner",
+        "value": "0 18px 44px #0004",
+        "purpose": "中奖结果卡片。"
+      },
+      {
+        "name": "settings",
+        "value": "0 20px 60px #0006",
+        "purpose": "设置玻璃浮层。"
+      },
+      {
+        "name": "modal",
+        "value": "0 30px 100px #0009",
+        "purpose": "导入、名单与历史对话框。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "scene-ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "球体淡出、收束和结果入场。"
+      },
+      {
+        "name": "control-transition",
+        "value": "150ms",
+        "purpose": "按钮背景与按下缩放。"
+      },
+      {
+        "name": "sphere-transition",
+        "value": "700ms",
+        "purpose": "结果背景姓名的透明度与收束模糊。"
+      },
+      {
+        "name": "winner-reveal",
+        "value": "650ms",
+        "purpose": "结果入场：透明度、translateY(20px)、scale(.95)、blur(6px) 收束。"
+      },
+      {
+        "name": "toggle-transition",
+        "value": "200ms",
+        "purpose": "重复中奖开关的底色与滑块。"
+      },
+      {
+        "name": "spinner",
+        "value": "800ms linear infinite",
+        "purpose": "正在揭晓的等待指示。"
+      },
+      {
+        "name": "reveal-cadence",
+        "value": "700ms",
+        "purpose": "逐个揭晓的信息节奏，可立即显示全部。"
+      },
+      {
+        "name": "animation-speed",
+        "value": "0.5–2×; step 0.25",
+        "purpose": "仅改变姓名球运动速度，不影响抽取。"
+      },
+      {
+        "name": "reduced-motion",
+        "value": ".01ms CSS; static Canvas; 100ms settling",
+        "purpose": "停止球体请求帧，保留状态重绘；开奖收束由1100ms缩为100ms，信息揭晓顺序保留。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "max-width: 1100px"
+      },
+      {
+        "name": "short-desktop",
+        "value": "max-height: 820px and min-width: 801px"
+      },
+      {
+        "name": "narrow-preview",
+        "value": "max-width: 800px"
+      },
+      {
+        "name": "small-preview",
+        "value": "max-width: 480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "抽奖主按钮",
+      "kind": "button",
+      "refersTo": "button-draw",
+      "description": "准备与滚动阶段的主要动作。",
+      "html": "<button class=\"ds-draw\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"m6 3 14 9-14 9V3Z\"/></svg>开始抽奖</button>",
+      "css": ".ds-draw{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-width:206px;min-height:58px;padding:15px 24px;border:0;border-radius:15px;background:var(--red,#d83243);color:#fff;font-size:18px;font-weight:550;box-shadow:0 4px 12px #0002;transition:background .15s,transform .15s;cursor:pointer}.ds-draw:hover:not(:disabled){background:var(--red-hover,#e44757)}.ds-draw:active:not(:disabled){transform:scale(.98)}.ds-draw:disabled{opacity:.45}.ds-draw:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-draw{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "下一轮按钮",
+      "kind": "button",
+      "refersTo": "button-next",
+      "description": "保存结果后的继续动作。",
+      "html": "<button class=\"ds-next\">继续下一轮<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-next{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-width:206px;min-height:58px;padding:15px 24px;border:0;border-radius:15px;background:#f1eff4;color:#15151a;font-size:18px;font-weight:550;box-shadow:0 4px 12px #0002;transition:background .15s,transform .15s;cursor:pointer}.ds-next:hover{background:#fff}.ds-next:active{transform:scale(.98)}.ds-next:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-next{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "对话框次要按钮",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "取消等次要对话框动作。",
+      "html": "<button class=\"ds-secondary\">取消</button>",
+      "css": ".ds-secondary{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:41px;padding:10px 17px;border:1px solid #48414f;border-radius:10px;background:#34303d;color:#ede5f4;font-size:13px;font-weight:550;transition:background .15s,border-color .15s;cursor:pointer}.ds-secondary:hover{background:#32323b}.ds-secondary:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-secondary{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "设置文本字段",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "本轮名称等单行文本输入。",
+      "html": "<label class=\"ds-field-label\" for=\"ds-round-name\">本轮名称</label><input id=\"ds-round-name\" class=\"ds-field\" placeholder=\"例如：幸运之选\" />",
+      "css": ".ds-field-label{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:block;margin-bottom:10px;color:#d4cddd;font-size:12px}.ds-field{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;height:42px;width:100%;padding:0 13px;border:1px solid #46414d;border-radius:10px;background:#29262f;color:#f4f3f5;font-size:14px;caret-color:#ff7d88}.ds-field::placeholder{color:#b0a7ba}.ds-field:focus{border-color:#9f3b4a}.ds-field:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-field,.ds-field-label{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "顶部管理动作",
+      "kind": "nav",
+      "refersTo": "header-action",
+      "description": "透明管理动作，以轻底色标记悬停与打开状态。",
+      "html": "<nav class=\"ds-header\"><button>名单管理</button><button aria-expanded=\"true\">抽奖设置</button><button>中奖记录</button></nav>",
+      "css": ".ds-header{display:flex;align-items:center;gap:3px}.ds-header button{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;min-height:42px;padding:11px 12px;border:0;border-radius:9px;background:transparent;color:#c4c2cc;font-size:13px;font-weight:550;transition:background .15s;cursor:pointer}.ds-header button:hover,.ds-header button[aria-expanded=true]{background:#25252d;color:#fff}.ds-header button:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-header{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "设置分段标签",
+      "kind": "nav",
+      "refersTo": "segmented",
+      "description": "在抽奖规则与动效／揭晓之间切换。",
+      "html": "<div class=\"ds-segmented\" role=\"tablist\" aria-label=\"抽奖设置分类\"><button role=\"tab\" aria-selected=\"true\">抽奖规则</button><button role=\"tab\" aria-selected=\"false\">动效与揭晓</button></div>",
+      "css": ".ds-segmented{display:flex;gap:4px;padding:4px;border-radius:11px;background:#15151b}.ds-segmented button{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;flex:1;min-height:38px;padding:9px;border:0;border-radius:7px;background:transparent;color:#bcb4c6;font-size:12px;white-space:nowrap;cursor:pointer}.ds-segmented button[aria-selected=true]{background:#46404f;color:#fff}.ds-segmented button:hover:not([aria-selected=true]){color:#c9c9d2}.ds-segmented button:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-segmented{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "轮次标签",
+      "kind": "chip",
+      "refersTo": "round-badge",
+      "description": "设置标题旁的次要轮次信息。",
+      "html": "<span class=\"ds-round\">第 01 轮</span>",
+      "css": ".ds-round{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:inline-block;padding:4px 7px;border:0;border-radius:6px;background:#3a303f;color:#d5c7dd;font-size:11px;white-space:nowrap}@media(prefers-reduced-motion:reduce){.ds-round{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "中奖结果卡片",
+      "kind": "card",
+      "refersTo": "winner-card",
+      "description": "开奖结果中的姓名前景。",
+      "html": "<div class=\"ds-winner\"><span>林知夏</span><small>本轮中奖</small></div>",
+      "css": ".ds-winner{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;width:210px;min-width:0;min-height:145px;padding:30px 20px;border:0;border-top:1px solid #51424a;border-radius:16px;background:var(--surface,#242329);box-shadow:0 18px 44px #0004}.ds-winner>span{color:#f6f3f8;font-size:clamp(27px,2.9vw,44px);font-weight:500;line-height:1.5;letter-spacing:.05em;overflow-wrap:anywhere}.ds-winner small{display:block;margin-top:14px;color:#ff9aa5;font-size:11px;letter-spacing:.02em}@media(prefers-reduced-motion:reduce){.ds-winner{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "浮动控制条",
+      "kind": "custom",
+      "refersTo": "control-dock",
+      "description": "人数、动作与停止方式共享的轻玻璃容器。",
+      "html": "<div class=\"ds-dock\"><button class=\"ds-dock-setting\"><span>本轮抽取</span><strong>3 人</strong></button><button class=\"ds-dock-action\">开始抽奖</button><button class=\"ds-dock-setting\"><span>停止方式</span><strong>手动停止</strong></button></div>",
+      "css": ".ds-dock{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:9px;border:1px solid var(--scene-line,#45454d);border-radius:23px;background:#25252ddb;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 14px 40px #0004}.ds-dock-setting{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:132px;padding:6px 16px;border:0;border-radius:12px;background:transparent;color:#f5f4f8;cursor:pointer}.ds-dock-setting:hover{background:#ffffff07}.ds-dock-setting span{color:#b3b1bc;font-size:11px}.ds-dock-setting strong{font-size:15px;font-weight:450}.ds-dock-action{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;min-width:206px;min-height:58px;padding:15px 24px;border:0;border-radius:15px;background:var(--red,#d83243);color:#fff;font-size:18px;font-weight:550;transition:background .15s,transform .15s;cursor:pointer}.ds-dock-action:hover{background:var(--red-hover,#e44757)}.ds-dock-action:active{transform:scale(.98)}.ds-dock button:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-dock,.ds-dock-action,.ds-dock-setting{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "设置浮层",
+      "kind": "card",
+      "refersTo": "settings-popover",
+      "description": "贴近顶部管理动作的可滚动临时玻璃层。",
+      "html": "<aside class=\"ds-settings\"><header><span>抽奖设置</span><button aria-label=\"收起抽奖设置\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m6 6 12 12M6 18 18 6\"/></svg></button></header><div class=\"ds-settings-body\">本轮设置</div></aside>",
+      "css": ".ds-settings{font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif;width:342px;max-width:100%;padding:0 0 16px;border:1px solid #45404b;border-radius:18px;background:#202027f5;backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);box-shadow:0 20px 60px #0006;overflow-y:auto;color:#f1eaf5}.ds-settings header{display:flex;align-items:center;justify-content:space-between;padding:14px 17px 6px 24px;font-size:15px;font-weight:500}.ds-settings header button{display:grid;place-items:center;width:40px;height:40px;border:0;border-radius:8px;background:transparent;color:#b4b1be;cursor:pointer}.ds-settings header button:hover{background:#ffffff0b;color:#f4f3f5}.ds-settings header button:focus-visible{outline:2px solid #ff6c7e;outline-offset:4px;}.ds-settings-body{padding:17px 24px 22px;color:#d6cfdd;font-size:13px}@media(prefers-reduced-motion:reduce){.ds-settings,.ds-settings-body{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "同场等待",
+    "overview": "幸运时刻的视觉中心是共同参与：姓名在同一个有边界的圆形空间内运动，主持人的操作停靠在下方，结果在前景清楚显现。近黑底、柔白姓名与少量红色把期待感留给内容本身。\n\n密度集中在姓名与必要设置中，其余区域保留呼吸。沿用用户明确选择的 iOS 风格系统字体；轻玻璃只服务于浮动操作条和设置浮层。此记录提取自已完成的方案 A 实现，源代码的最终样式级联为准。",
+    "keyCharacteristics": [
+      "共同圆形边界内的姓名与细微轨道红色。",
+      "近黑舞台、柔白主信息、低对比次要信息。",
+      "柔和圆角、低幅度阴影、有限范围的玻璃。",
+      "主持人操作清楚，结果与保存状态相互呼应。"
+    ],
+    "rules": [
+      {
+        "name": "The Reserved Red Rule",
+        "body": "主红用于主要抽奖动作及开关状态；轨道与状态使用较轻的红色。大片背景保持近黑，避免把红色扩成全场光晕。",
+        "section": "colors"
+      },
+      {
+        "name": "The Native Type Rule",
+        "body": "保留用户明确认可的 iOS 风格系统字族，不把另加的装饰展示字体引入当前界面。姓名的字形、字距和完整可读性优先。",
+        "section": "typography"
+      },
+      {
+        "name": "The Shared Bounds Rule",
+        "body": "可见姓名的完整文字边界必须落在同一个球体内；球外不散落候选姓名，圆心不放遮挡姓名的装饰实体。",
+        "section": "layout"
+      },
+      {
+        "name": "The Quiet Glass Rule",
+        "body": "玻璃用于浮动操作条和设置浮层；结果卡片以实色承载姓名。深度来自透明层、细边界和柔软阴影。",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do 先保证姓名、中奖结果和开始／停止／下一轮操作的可读性，再安排装饰。",
+      "Do 让所有可见候选姓名的完整边界属于同一个球体；大名单使用有上限的视觉样本。",
+      "Do 在抽奖规则与动效／揭晓之间使用明确的设置标签页，并保持隐藏浮层真正不显示。",
+      "Do 保留清晰的键盘焦点、长姓名适配、可滚动结果，以及系统减少动态效果设置。",
+      "Do 以桌面默认窗口和最小窗口检验布局，同时把较窄浏览器预览当作补充验证。"
+    ],
+    "donts": [
+      "Don't 在候选姓名周围增加姓名卡壳、球外散落、中央遮挡物、彩纸或宽泛红色光晕。",
+      "Don't 把轻玻璃扩展到每个容器，或用强发光和硬阴影争夺姓名的注意力。",
+      "Don't 用画布上的样本数量、运动速度或显示顺序暗示中奖概率发生变化。",
+      "Don't 把旧样式中未被当前组件使用的装饰模式当作新页面的设计规范。"
+    ]
+  }
+}

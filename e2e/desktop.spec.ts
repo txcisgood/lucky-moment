@@ -1,0 +1,61 @@
+import { test, expect, _electron as electron } from '@playwright/test';
+import { createRequire } from 'node:module';
+import { mkdtemp, readFile, rm } from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+
+test('桌面生产构建：离线启动、原生导出、全屏和关闭恢复', async () => {
+  test.setTimeout(60000);
+  test.skip(Boolean(process.env.CI), 'CI 的浏览器流程单独验证，桌面真机测试在本地运行');
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'lucky-desktop-'));
+  const require = createRequire(import.meta.url);
+  const env = { ...process.env, LUCKY_DATA_DIR: directory };
+  delete env.ELECTRON_RUN_AS_NODE;
+  const packaged = process.env.LUCKY_EXECUTABLE_PATH;
+  const launchOptions = { executablePath: packaged || require('electron'), args: packaged ? [] : ['.'], env };
+  let desktop = await electron.launch(launchOptions);
+  try {
+    const page = await desktop.firstWindow();
+    const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
+    await expect(page.getByText('活动已自动保存')).toBeVisible();
+    expect(await page.evaluate(() => typeof (window as unknown as { require: unknown }).require)).toBe('undefined');
+    await page.screenshot({ path: 'test-results/desktop-initial.png' });
+    await page.getByRole('button', { name: '导入名单', exact: true }).first().click();
+    await page.getByRole('tab', { name: '粘贴名单' }).click();
+    await page.getByLabel('参与者姓名').fill('林予安，陈星野，王可欣，李沐阳，赵一诺，周知夏，吴子墨，郑思远');
+    await page.getByRole('button', { name: '导入 8 人', exact: true }).click();
+    await page.getByRole('button', { name: '抽奖设置', exact: true }).click();
+    await page.getByLabel('中奖人数', { exact: true }).fill('3');
+    await page.getByRole('button', { name: '开始抽奖' }).click();
+    await page.getByRole('button', { name: '停止，揭晓幸运' }).click();
+    await expect(page.getByLabel('本轮中奖结果').locator('.winner')).toHaveCount(3);
+    const names = await page.locator('.winner-name').allTextContents();
+    await page.locator('.winner').last().evaluate(element => Promise.all(element.getAnimations().map(animation => animation.finished)));
+    await page.screenshot({ path: 'test-results/desktop-result.png' });
+    await page.getByRole('button', { name: '全屏展示', exact: true }).click();
+    await expect(page.getByRole('complementary')).toBeHidden();
+    await page.screenshot({ path: 'test-results/desktop-fullscreen.png' });
+    await page.getByRole('button', { name: '退出全屏', exact: true }).click();
+    await expect(page.getByRole('complementary')).toBeHidden();
+    const exportPath = path.join(directory, 'results.xlsx');
+    await desktop.evaluate(({ dialog }, filename) => { dialog.showSaveDialog = async () => ({ canceled: false, filePath: filename }); }, exportPath);
+    await page.getByRole('button', { name: /中奖记录/ }).click();
+    await page.getByRole('button', { name: '导出 Excel' }).click();
+    await expect(page.getByText('中奖记录已导出')).toBeVisible();
+    expect((await readFile(exportPath)).byteLength).toBeGreaterThan(1000);
+    await page.getByLabel('关闭弹窗').click();
+    await page.getByRole('button', { name: '抽奖设置', exact: true }).click();
+    await page.getByLabel('本轮名称').fill('重启后保留此设置');
+    // Close immediately, before the debounce timer, to verify the native flush handshake.
+    const closed = page.waitForEvent('close');
+    await desktop.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].close());
+    await closed;
+    await desktop.close();
+    desktop = await electron.launch(launchOptions);
+    const restored = await desktop.firstWindow();
+    await expect(restored.getByLabel('本轮名称')).toHaveValue('重启后保留此设置');
+    await expect(restored.getByLabel('本轮中奖结果').locator('.winner')).toHaveCount(3);
+    expect(await restored.locator('.winner-name').allTextContents()).toEqual(names);
+    expect(errors).toEqual([]);
+  } finally { await desktop.close(); await rm(directory, { recursive: true, force: true }); }
+});
